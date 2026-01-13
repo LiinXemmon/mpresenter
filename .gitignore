@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+cache/
+output/
+tmp_cache/
+*.log
+missfont.log
+slides.log
+input/*.pdf
+!input/paper.pdf
+# pixi environments
+.pixi
+*.egg-info

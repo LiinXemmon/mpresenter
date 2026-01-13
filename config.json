@@ -1,0 +1,46 @@
+{
+  "source_pdf": "input/paper.pdf",
+  "input_dir": "input",
+  "cache_root": "cache",
+  "output_root": "output",
+  "max_plan_iters": 3,
+  "max_code_iters": 6,
+  "planner_note": null,
+  "llm": {
+    "provider": "auto",
+    "planner_model": "gemini-3-flash-preview",
+    "reviewer_model": "gemini-3-flash-preview",
+    "coder_model": "gemini-3-flash-preview",
+    "interpreter_model": "gemini-3-flash-preview",
+    "openai_api_key": "",
+    "gemini_api_key": ""
+  },
+  "assets": {
+    "method": "ppdoclayout",
+    "model_dir": null,
+    "layout_unclip_ratio": 1.05,
+    "zoom": 3.0,
+    "caption_max_gap": 180,
+    "caption_min_x_overlap": 0.2,
+    "caption_pad": 4,
+    "min_area_ratio": 0.005,
+    "save_layout": false,
+    "ocr_lang": "ch",
+    "ocr_version": null
+  },
+  "tts": {
+    "engine": "cosyvoice",
+    "cosyvoice_model": "FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+    "cosyvoice_device": "auto",
+    "cosyvoice_sample_rate": 22050,
+    "cosyvoice_root": "third_party/CosyVoice",
+    "cosyvoice_prompt_wav": "resources/tts_sample_1.wav",
+    "cosyvoice_prompt_text": "You are a helpful assistant.<|endofprompt|> mpresenter是一个paper to video的多智能体系统。",
+    "cosyvoice_inference": "zero_shot",
+    "cosyvoice_speed": 1.1,
+    "cosyvoice_text_frontend": false,
+    "cosyvoice_fp16": false,
+    "cosyvoice_load_trt": false,
+    "cosyvoice_load_vllm": false
+  }
+}

@@ -1,0 +1,11 @@
+**/__pycache__/
+**/*.pyc
+.pixi/
+.pytest_cache/
+cache/
+input/
+output/
+test_cache/
+tmp_cache/
+tmp_output/
+*.log
